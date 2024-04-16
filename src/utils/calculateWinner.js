@@ -1,4 +1,4 @@
-//This Function helps in determining wether the player has won or not.
+//This function helps in determining wether the player has won or not.
 export default function calculateWinner(squares) {
   const lines = [
     [0, 1, 2],
