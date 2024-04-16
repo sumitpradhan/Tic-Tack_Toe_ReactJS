@@ -1,3 +1,4 @@
+//This Board component renders the Sqaures(Buttons to display which ove has been played on it)
 import Square from "./Square";
 import calculateWinner from "../utils/calculateWinner";
 
@@ -13,7 +14,7 @@ const Board = ({ squares, xPlay, onPlay }) => {
     onPlay(newSquare);
   };
 
-  const winner = calculateWinner(squares);
+  const winner = calculateWinner(squares); // In each render check if there is a winner.
   return (
     <div>
       <div className="tic-tac">
